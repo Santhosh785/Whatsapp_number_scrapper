@@ -224,3 +224,4 @@ stats and errors. **`wa_session_state`** — pairing status and current QR.
 | `No groups synced` | The linked phone is offline. |
 | Sync times out on Vercel | Enable Fluid compute; otherwise run `npm run sync` locally. |
 | Many unresolved numbers | Those contacts are not in the linked phone's address book, so WhatsApp exposes only an `@lid`. Saving them as contacts on that phone resolves them on the next sync. |
+# Whatsapp_scrapper
