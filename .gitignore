@@ -1,20 +1,23 @@
 # Dependencies
 node_modules/
 
-# WhatsApp Web JS Auth Session
+# Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Local WhatsApp session (production sessions live in MongoDB)
 .wwebjs_auth/
 .wwebjs_cache/
 
-# Output generated files
-members_numbers.txt
-members_details.txt
-
-# Environment variables
+# Environment
 .env
-.DS_Store
+.env.local
+.env*.local
 
-.node_modules
-.wwebjs_auth
-.wwebjs_cache
-package-lock.json
-package.json
+# Local exports produced by the legacy scripts
+legacy/exports/
+
+# OS
+.DS_Store

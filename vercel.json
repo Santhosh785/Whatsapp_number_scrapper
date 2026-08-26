@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    {
+      "path": "/api/cron/weekly",
+      "schedule": "0 2 * * 1"
+    }
+  ],
+  "functions": {
+    "app/api/sync/route.ts": { "maxDuration": 300, "memory": 3009 },
+    "app/api/cron/weekly/route.ts": { "maxDuration": 300, "memory": 3009 },
+    "app/api/whatsapp/link/route.ts": { "maxDuration": 300, "memory": 3009 }
+  }
+}
